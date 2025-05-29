@@ -1,0 +1,13 @@
+kocha = input("Ko'cha nomini  kiriting\n")
+mahalla = input("Mahalla\n")
+tuman = input("Tuman\n")
+viloyat = input("Viloyat\n")
+# print(kocha + " " + "ko'chasi,\n", mahalla + " " + "mahallasi,\n", tuman + " " + "tumani,\n", viloyat + " " + "viloyati." )
+manzil = f"{kocha} ko'chasi, {mahalla} mahallasi, {tuman} tumani, {viloyat} viloyati"
+print(manzil.upper())
+print(manzil.lower())
+print(manzil.title())
+print(manzil.capitalize())
+print(manzil.lstrip())
+print(manzil.rstrip())
+print(manzil.strip())
