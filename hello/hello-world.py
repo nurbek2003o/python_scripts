@@ -81,7 +81,7 @@
 # shaxslar = ['Imom Buxoriy', 'Bill Gates', 'Alisher Navoiy', 'Amir Temur']
 # adiblar = shaxslar.pop(0)
 #
-# print(f"Men tarixiy shaxslardan {adiblar} bilan, zamonaviy shaxslardan {shaxslar[0]} bilan suhbat \nqilishni istardim")
+# print(f"Men tarixiy shaxslardan {adiblar} bilan, zamonaviy shaxslardan {shaxslar.pop(0)} bilan suhbat \nqilishni istardim")
 #
 friends = []
 friends.append("Joe")
