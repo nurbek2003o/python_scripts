@@ -83,18 +83,58 @@
 #
 # print(f"Men tarixiy shaxslardan {adiblar} bilan, zamonaviy shaxslardan {shaxslar.pop(0)} bilan suhbat \nqilishni istardim")
 #
-friends = []
-friends.append("Joe")
-friends.append("Bob")
-friends.append("Sholibek")
-friends.append("Jim")
-friends.append("Jucki")
-friends.append("Bobik")
-friends.remove("Bob")
-friends.remove("Sholibek")
-friends.append("Jim1")
-friends.insert(0, "Jim2")
-friends.insert(2, "Jim3")
-mehmonlar = friends.pop(0),friends.pop(2),friends.pop(3),friends.pop(1)
-print(mehmonlar)
-print(friends)
+# friends = []
+# friends.append("Joe")
+# friends.append("Bob")
+# friends.append("Sholibek")
+# friends.append("Jim")
+# friends.append("Jucki")
+# friends.append("Bobik")
+# friends.remove("Bob")
+# friends.remove("Sholibek")
+# friends.append("Jim1")
+# friends.insert(0, "Jim2")
+# friends.insert(2, "Jim3")
+# mehmonlar = friends.pop(0),friends.pop(2),friends.pop(3),friends.pop(1)
+# print(mehmonlar)
+# print(friends)
+
+# 8-dars
+# cars = ['bmv', 'mercedes benz', 'volvo', 'general motors', 'tesla', 'audi']
+# cars.sort() # A-Z gacha tartiblaydi
+# print(cars)
+# cars.sort(reverse=True)  # Z-A gacha tartiblaydi
+# print(cars)
+# print(sorted(cars))
+# print(sorted(cars, reverse=True))
+# cars.reverse()
+# print(len(cars))
+# sonlar = list(range(0,10))
+# print(sonlar)
+# juft_sonlar = list(range(0,20,2))
+# print(juft_sonlar)
+# print(cars[2:5])
+# print(cars[:4])
+# print(cars[::-1])
+
+#  Vazifalar
+
+#davlatlar = ['Uzb', 'AQSH', 'Rus', 'German', 'France']
+# davlatlar.sort(reverse=True)
+# print(davlatlar)
+# juft_sonlar = list(range(120,1201,2))
+# sum(juft_sonlar)
+# print(len(juft_sonlar))
+# print(juft_sonlar[:20])
+# print(juft_sonlar[-20:])
+# print(juft_sonlar[520:])
+
+taomlar = ['osh', 'bishtex', 'shurbo', 'manti', 'xonim']
+nonushta = taomlar[0:5]
+nonushta.remove('osh')
+nonushta.remove('bishtex')
+nonushta.append('shirinlik')
+nonushta.append('cofe')
+nonushta = tuple(nonushta)
+nonushta[0] = 'qaymoq va non'
+print(tuple(nonushta))
