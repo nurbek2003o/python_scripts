@@ -129,12 +129,52 @@
 # print(juft_sonlar[-20:])
 # print(juft_sonlar[520:])
 
-taomlar = ['osh', 'bishtex', 'shurbo', 'manti', 'xonim']
-nonushta = taomlar[0:5]
-nonushta.remove('osh')
-nonushta.remove('bishtex')
-nonushta.append('shirinlik')
-nonushta.append('cofe')
-nonushta = tuple(nonushta)
-nonushta[0] = 'qaymoq va non'
-print(tuple(nonushta))
+# taomlar = ['osh', 'bishtex', 'shurbo', 'manti', 'xonim']
+# nonushta = taomlar[0:5]
+# nonushta.remove('osh')
+# nonushta.remove('bishtex')
+# nonushta.append('shirinlik')
+# nonushta.append('cofe')
+# nonushta = tuple(nonushta)
+# nonushta[0] = 'qaymoq va non'
+# print(tuple(nonushta))
+
+
+#  9-vazifa
+# mehmonlar = ['Ali', 'Vali', 'Hasan', 'Husan', 'Olim']
+# for mehmon in mehmonlar:
+#     print(f"Hurmatli {mehmon}, sizni 20 dekabr kuni nahorgi oshga taklif qilamiz")
+#     print("Hurmat bilan, Sanaqulovlar oilasi")
+# sonlar = list(range(11))
+# sonlar_kvadrati = []
+# for son in sonlar:
+#     sonlar_kvadrati.append(son ** 2)
+# print(sonlar)
+# print(sonlar_kvadrati)
+# dostlar = []
+# print("5ta eng yaqin do'stingizni kim?")
+# for n in range(5):
+#     dostlar.append(input(f"{n+1}-do'stingizning ismini kiriting:\n "))
+# print(dostlar)
+
+
+# ismlar = ['Ali','Vali', 'Hasan', 'Husan', 'Olim' ]
+# for n in ismlar:
+#     print(f"Hello, {n}!")
+# print(f"Kod {len(ismlar)} marta takrorlandi.")
+# toq_sonlar = list(range(11,100,2))
+# for i in toq_sonlar:
+#     print(f"{i} ning kubi {i**3} ga teng ")
+
+# kinolar = []
+# print("5ta eng sevimli kinolaringizni kiriting\n")
+# for i in range(5):
+#     kinolar.append(input(f"{i + 1}-kino nomini kiriting\n"))
+# print(kinolar)
+
+
+a=int((input("Bugun nechta odam bilan suhbat qildingiz:\n")))
+odamlar = []
+for i in range(a):
+    odamlar.append(input(f"{i+1} - suhbat qilgan odamingiz kim edi?\n"))
+print(odamlar)
