@@ -173,8 +173,71 @@
 # print(kinolar)
 
 
-a=int((input("Bugun nechta odam bilan suhbat qildingiz:\n")))
-odamlar = []
-for i in range(a):
-    odamlar.append(input(f"{i+1} - suhbat qilgan odamingiz kim edi?\n"))
-print(odamlar)
+# a=int((input("Bugun nechta odam bilan suhbat qildingiz:\n")))
+# odamlar = []
+# for i in range(a):
+#     odamlar.append(input(f"{i+1} - suhbat qilgan odamingiz kim edi?\n"))
+# print(odamlar)
+
+#   10-dars
+# avtolar = ['audi','bmw', 'volvo', 'kia', 'hyundai']
+# for avto in avtolar:
+#     if avto == 'bmw':
+#         print(avto.upper())
+#     else:
+#         print(avto.title())
+# ism =  input('Ismingiz nima?\n>>>')
+# if ism.lower() != 'ali':
+#     print(f"Uzr, {ism.title()} biz Alini kutyabmiz")
+# else:
+#     print("Salom, Ali")
+# javob = float(input("12*6 nechchiga teng?>>>"))
+# if javob != 72:
+#     print("Javob xato!")
+# yosh = int(input("Yoshingiz nechchida"))
+# if yosh >= 18:
+#     print('Xush kelibsiz')
+# else:
+#     print('Kirish mumkinmas')
+# login = input("Yangi loginni tanlang:")
+# if len(login) <= 5:
+#     print("Login 5ta harfdan ko'proq bo'lishi kerak")
+# yil = int(input("Tug'ilgan yilingizni kiriting:" ))
+# if 2025-yil<18:
+#     print(f"Yoshingiz {2025-yil}da ekan")
+#     print("Kirish mumkin emas")
+# else:
+#     print("Xush kelibsiz")
+# yosh = int(input("Yoshingiz nechada?"))
+# if yosh > 65: print("Siz covid 19 risk guruhidasiz")
+# x, y = 80,50
+# print("x>y") if x > y else print("x<y")
+# cars = ['toyota', 'mazda', 'hyundai', 'gm', 'kia']
+# for car in cars:
+#     if car != 'gm':
+#         print(car.title())
+#     else:
+#         print(car.upper())
+
+# print("2ta son kiriting!")
+# x=float(input("Birinchi sonni kiriting"))
+# y=float(input("Ikkinchi sonni kiriting"))
+# if x == y:
+#     print("Sonlar teng")
+# a=input("Ismingizni yozing!")
+# print(a)
+# if a.lower() == "admin":
+#     print("Xush kelibsiz Admin")
+# else:
+#     print(f"Xush kelibsiz {a.title()}")
+# a = int(input("Istalgan sonni kiriting!"))
+# print(a)
+# if a < 0:
+#     print(f"Manfiy son")
+# else:
+#     print(f"Musbat son")
+son = float(input("Istalgan sonni kiriting."))
+if son >= 0:
+    print(son**(1/2))
+else:
+    print("Musbat sonni kiriting.")
