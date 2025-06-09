@@ -236,8 +236,179 @@
 #     print(f"Manfiy son")
 # else:
 #     print(f"Musbat son")
-son = float(input("Istalgan sonni kiriting."))
-if son >= 0:
-    print(son**(1/2))
-else:
-    print("Musbat sonni kiriting.")
+# son = float(input("Istalgan sonni kiriting."))
+# if son >= 0:
+#     print(son**(1/2))
+# else:
+#     print("Musbat sonni kiriting.")
+
+#  11- dars
+# yosh =  int(input('Yoshingiz nechida?>>'))
+# if yosh<=4:
+#     print('Sizga kirish bepul')
+# elif yosh <=12:
+#     print('Sizga kirish 5000 so\'m')
+# else:
+    # print('Sizga kirish 10000 so\'m')
+
+
+# yosh = int(input('Yoshingiz nechida'))
+# if yosh<4:
+#     price = 0
+# elif yosh<12:
+#     price = 5000
+# else:
+#     price = 10000
+# print(f"Sizga kirish {price} so'm ")
+
+
+# yosh = int(input('Yoshingiz nechchida?'))
+# if yosh<=4:
+#     price=0
+# elif yosh<=12:
+#     price=5000
+# elif yosh<65:
+#     price=10000
+# elif yosh>=65:
+#     price=8000
+# print(f"Sizga kirish {price} so'm ")
+# kun = input("Bugun nima kun?>>>")
+# if kun.lower()=='shanba' or kun.lower()=='yakshanba':
+#     print("Bugun dam olish kuni")
+# else:
+#     print("Bugun ish kuni")
+
+# kun=input('Bugun nima kun?>>>')
+# harorat=float(input('Havo harorati qanday?>>'))
+# if (kun.lower() == 'shanba' or kun.lower() == 'yakshanba') and harorat>=30:
+#     print('Cho\'milgani kettik!')
+# elif (kun.lower() == 'shanba' or kun.lower() == 'yakshanba') and harorat<30:
+#     print('Uyda o\'tiramiz')
+# else:
+#     print("Dam olish kuni emas")
+
+
+# narh = 15000
+# choy = True
+# salat = True
+# if choy and salat:
+#     narh = narh +10000
+# elif choy or salat:
+#     narh = narh +5000
+#
+# print(f"Jami {narh} so'm")
+# narh = 15000
+# choy = True
+# salat = False
+# non = True
+# kompot = True
+# assosrti = False
+# if choy:
+#     print('Mijoz choy oldi.')
+#     narh = narh +3000
+# if salat:
+#     print('Mijoz salat oldi.')
+#     narh = narh +5000
+# if non:
+#     print('Mijoz non oldi.')
+#     narh = narh +2000
+# if kompot:
+#     print('Mijoz kompot oldi.')
+#     narh = narh +5000
+# if assosrti:
+#     print('Mijoz assosrti oldi.')
+#     narh = narh +15000
+# print(f"Jami {narh} so'm")
+
+# menu = ['osh', 'qazonkabob', 'shashlik', 'norin', 'somsa']
+# ovqat = input('Nima ovqat yeysiz?>>>')
+# if ovqat.lower() not in menu:
+#     print('Afsuski bizda bunday ovqat yuq')
+# else:
+#
+#     print('Buyurtma qabul qilindi')
+# menu = ['osh', 'qozonkabob','shashlik','norin','somsa']
+# buyurtmalar = ['osh','somsa','manti', 'shashlik']
+# if buyurtmalar:
+#     for taom in buyurtmalar:
+#         if taom in menu:
+#             print(f"Menuda {taom} bor")
+#         else:
+#             print(f"Menuda {taom} yuq")
+# else:
+#     print(f"Savatchangiz bo'sh")
+
+
+
+
+# uyga vazifalar
+# son = float(input('Juft son kiriting:'))
+# if son%2:
+#     print('Bu juft emas')
+# else:
+#     print('Rahmat')
+
+# yosh = int(input("Yoshingizni kiriting: "))
+# if yosh <+ 4:
+#     narh = 0
+# elif yosh <= 18:
+#     narh = 10000
+# elif yosh <= 60:
+#     narh = 20000
+# else:
+#     narh = 0
+# print(f"Sizga kirish {narh} so'm")
+
+# mahsulotlar = ['olma', 'anjir', 'anor', 'tarvuz', 'uzum', 'shaftoli', 'kartoshka', 'qovun', 'piyoz', 'tuz']
+# savat = []
+# print("5ta mahsulotni kiriting")
+# savat.append(input('1-mahsulotni kiriting'))
+# savat.append(input('2-mahsulotni kiriting'))
+# savat.append(input('3-mahsulotni kiriting'))
+# savat.append(input('4-mahsulotni kiriting'))
+# savat.append(input('5-mahsulotni kiriting'))
+# bor_mahsulotni = []
+# mavjud_emas = []
+# if savat:
+#     for mahsulot in savat:
+#         if mahsulot in mahsulotlar:
+#             print(f"Do'konimizda {mahsulot} bor")
+#             bor_mahsulotni.append(mahsulot)
+#         else:
+#             print(f"Do'konimizda {mahsulot} yuq")
+#             mavjud_emas.append(mahsulot)
+#     if mavjud_emas:
+#         print(f"Do'konimizda quyidagi mahsulotlar yuq:")
+#         for mahsulot in mavjud_emas:
+#             print(mahsulot)
+#     else:
+#         print(f"Siz so'ragan barcha mahsulotlar bor")
+# else:
+#     print("Savatingiz bo'sh")
+#
+#
+
+# x = float(input('Birinchi sonni kiriting'))
+# y = float(input('Ikkinchi sonni kiriting'))
+# if x==y:
+#     print(f"{x}={y}")
+# elif x>y:
+#     print(f"{x}>{y}")
+# else:
+#     print(f"{x}<{y}")
+
+
+# foydalanuvchilar = ['nurbek', 'sardor', 'katya', 'rohila', 'Azam']
+# if foydalanuvchilar.append(input('Yangi login kiriting')) in foydalanuvchilar:
+#     print('Login band')
+# else:
+#     print('Login successful')
+# print(foydalanuvchilar)
+
+a = list(range(2,11))
+# print(a)
+b = int(input('Istalgan butun sonni kiriting: '))
+for son in a:
+    if not (b%son):
+        print(f"{b} soni {son} ga qoldiqsiz bo'linadi")
+   
