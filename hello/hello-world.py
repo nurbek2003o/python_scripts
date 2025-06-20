@@ -405,10 +405,56 @@
 #     print('Login successful')
 # print(foydalanuvchilar)
 
-a = list(range(2,11))
+# a = list(range(2,11))
 # print(a)
-b = int(input('Istalgan butun sonni kiriting: '))
-for son in a:
-    if not (b%son):
-        print(f"{b} soni {son} ga qoldiqsiz bo'linadi")
-   
+# b = int(input('Istalgan butun sonni kiriting: '))
+# for son in a:
+#     if not (b%son):
+#         print(f"{b} soni {son} ga qoldiqsiz bo'linadi")
+
+   # 13-dars | Pythonda lug'at
+# car_0= {'model':'ferrari', 'rang':'qizil'}
+# print(car_0['rang'])
+# talaba_0={'ism':'murod olimov', 'yosh':20, 't_yil':2000}
+# print(f"{talaba_0['ism'].title()},\
+#       {talaba_0['t_yil']}-yilda tug'ilgan,\
+#       {talaba_0['yosh']} yoshda")
+# talaba_0['kurs'] = 4
+# talaba_0['fakultet'] = 'informatika'
+# print(talaba_0)
+# talaba_1 = {}
+# talaba_1['ism'] = 'qobil'
+# talaba_1['kurs']=3
+# talaba_1['yosh']=20
+# print(talaba_1)
+# print(f"Talaba {talaba_1['ism'].title()} {talaba_1['kurs']}-kurs")
+# talaba_1['kurs']=4
+# print(f"Talaba {talaba_1['ism'].title()} {talaba_1['kurs']}-kurs")
+# telefonlar={
+#     'ali':'iphone x',
+#     'vali':'galaxy s9',
+#     'olim':'mi 10 pro',
+#     'orif':'nokia 3310'
+# }
+# print(telefonlar)
+# phone=telefonlar.get('hasan')
+# print(phone)
+
+
+
+# Uyga vazifalar
+# otam ={'ism':'zafar', 't_yil':1975, 't_joyi':'Samarqand'}
+# print(f"Otamning ismi {otam['ism'].title()}, {otam['t_yil']}-yilda, {otam['t_joyi'].title()}da tug'ilgan ")
+# sevimli_taom={'otam':'barak','onam':'qatiqli osh', 'Ali akam':'manti', 'Elbek Akam':'shurva','Singlim':'osh'}
+# print(f"Otamning sevimli taomi {sevimli_taom['otam']}")
+# print(f"Onamning sevimli taomi {sevimli_taom['onam']}")
+# print(f"Elbek akamning sevimli taomi {sevimli_taom['Elbek Akam']}")
+python_izohli_lugati={
+    'integer':'Butun son',
+    'float':"O'nlik son",
+    'string':'Matn',
+    'list':"Ro'yxat",
+    'tuple':"O'zgarmas list"
+}
+kalit=input("Biror so'z kiriting").lower()
+tarjima=
