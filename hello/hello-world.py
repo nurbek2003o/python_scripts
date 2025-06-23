@@ -449,20 +449,124 @@
 # print(f"Otamning sevimli taomi {sevimli_taom['otam']}")
 # print(f"Onamning sevimli taomi {sevimli_taom['onam']}")
 # print(f"Elbek akamning sevimli taomi {sevimli_taom['Elbek Akam']}")
-python_izohli_lugati={
-    'integer':'Butun son',
-    'float':"O'nlik son",
-    'string':'Matn',
-    'list':"Ro'yxat",
-    'tuple':"O'zgarmas list"
-}
+# python_izohli_lugati={
+#     'integer':'Butun son',
+#     'float':"O'nlik son",
+#     'string':'Matn',
+#     'list':"Ro'yxat",
+#     'tuple':"O'zgarmas list"
+# }
 # kalit=input("Biror so'z kiriting").lower()
 # tarjima=python_izohli_lugati.get(kalit, "Bunday so'z mavjud emas")
 # print(tarjima)
 
-kalit=input("Biror so'z kiriting: ").lower()
-tarjima=python_izohli_lugati.get(kalit)
-if tarjima==None:
-    print("Bunday so'z mavjudmas")
-else:
-    print(f"{kalit.title()} so'zi {tarjima} deb tarjima qilinadi.")
+# kalit=input("Biror so'z kiriting: ").lower()
+# tarjima=python_izohli_lugati.get(kalit)
+# if tarjima==None:
+#     print("Bunday so'z mavjudmas")
+# else:
+#     print(f"{kalit.title()} so'zi {tarjima} deb tarjima qilinadi.")
+
+
+# 15-dars
+
+# talaba_0={
+#     'ism':'alijon',
+#     'familiya':'shamshiyev',
+#     'yosh':22,
+#     'fakultet':'matematika',
+#     'kurs':4
+# }
+# print(talaba_0.items())
+# for kalit, qiymat in talaba_0.items():
+#     print(f"Kalit: {kalit}")
+#     print(f"Qiymat: {qiymat} \n")
+
+
+# telefonlar={
+#     'ali':'iphone x',
+#     'vali':'galaxy s9',
+#     'olim': 'mi 10 pro',
+#     'orif':'nokia 3310',
+#     'hamida':'galaxy s9',
+#     'maryam':'huawei p30',
+#     'tohir':'iphone x',
+#     'umar':'iphone x'
+# }
+# for k,q in telefonlar.items():
+#     print(f"{k.title()} ning telefoni {q}")
+
+# mahsulotlar={
+#     'olma':10000,
+#     'anor':20000,
+#     'uzum':40000,
+#     'anjir':25000,
+#     'shaftoli':30000,
+# }
+# print(mahsulotlar.keys())
+# print("Do'kondagi mahsulotlar:")
+# for mahsulot in mahsulotlar.keys():
+#     print(mahsulot.title())
+# bozorlik=['anor','uzum','non','baliq']
+# for mahsulot in mahsulotlar:
+#     if mahsulot in bozorlik:
+#         print(f"{mahsulot.title()} {mahsulotlar[mahsulot]}")
+# for buyum in bozorlik:
+#     if buyum not in mahsulotlar:
+#         print(f"Iltimos, do'koningizga {buyum} ham olib keling")
+# print("Do'konimizdagi mahsulotlar:")
+# for mahsulot in sorted(mahsulotlar):
+#     print(mahsulot.title())
+# print(telefonlar.values())
+# print('Foydalanuvchilarni quyidagi telefonlarni ishlatishadi:')
+# for tel in set(telefonlar.values()):
+#     print(tel)
+
+
+# Uyga vazifalar:
+
+# python_izohli_lugati={
+#     'integer':'Butun son',
+#     'float':"O'nlik son",
+#     'string':'Matn',
+#     'list':"Ro'yxat",
+#     'tuple':"O'zgarmas list",
+#     'for':'Biror amalni qayta-qayta bajarish sikli',
+#     'if':'Shartlarni tekshirish operatori',
+#     'Boolean':'Mantiqiy qiymat',
+#     'type':'Malumot turini aniqlash',
+#     'get':'Lug\'atdan elementni olish'
+# }
+# for k, q in sorted(python_izohli_lugati.items()):
+#     print(f"{k.title()}-{q}")
+# dunyo_davlatlari={
+#     'aqsh':'washington',
+#     'italiya':'rim',
+#     'malayziya':'kuala-lumpur',
+#     'uzbekistan':'toshkent',
+#     'qirg\'iziston':'bishker',
+#     'qozog\'iston':'nursulton',
+#     'rossiya':'moskva',
+#     'singapur':'singapur',
+#     'tojikiston':'dushanbe'
+# }
+# for value in sorted(dunyo_davlatlari.values()):
+#     print(value.title())
+# country=input("Qaysi davlatning poytaxtini bilishni istaysiz: ")
+# capital = dunyo_davlatlari.get(country)
+# if capital==None:
+#     print("kechirasiz,bizda malumot yuq")
+# else:
+#     print(f"{country}ning poytaxti {capital}ga teng")
+
+
+taomlar={'osh':20000,'shurvo':30000,'shashlik':6000,'non':5000,'salat':6000,'choy':2000,'kompot':15000,'bushteks':3000,'mastava':35000}
+print("3ta ovqat nomini kiriting.")
+buyurtmalar=[]
+for n in range(3):
+    buyurtmalar.append(input(f"{n+1}-taom").lower())
+for buyurtma in buyurtmalar:
+    if buyurtma in taomlar:
+        print(f"{buyurtma.title()} {taomlar[buyurtma]}")
+    else:
+        print(f"Kechirasiz, {buyurtma} bizda yuq.")
