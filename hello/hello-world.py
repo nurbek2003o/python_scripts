@@ -456,5 +456,13 @@ python_izohli_lugati={
     'list':"Ro'yxat",
     'tuple':"O'zgarmas list"
 }
-kalit=input("Biror so'z kiriting").lower()
-tarjima=
+# kalit=input("Biror so'z kiriting").lower()
+# tarjima=python_izohli_lugati.get(kalit, "Bunday so'z mavjud emas")
+# print(tarjima)
+
+kalit=input("Biror so'z kiriting: ").lower()
+tarjima=python_izohli_lugati.get(kalit)
+if tarjima==None:
+    print("Bunday so'z mavjudmas")
+else:
+    print(f"{kalit.title()} so'zi {tarjima} deb tarjima qilinadi.")
