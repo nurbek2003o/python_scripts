@@ -560,13 +560,205 @@
 #     print(f"{country}ning poytaxti {capital}ga teng")
 
 
-taomlar={'osh':20000,'shurvo':30000,'shashlik':6000,'non':5000,'salat':6000,'choy':2000,'kompot':15000,'bushteks':3000,'mastava':35000}
-print("3ta ovqat nomini kiriting.")
-buyurtmalar=[]
-for n in range(3):
-    buyurtmalar.append(input(f"{n+1}-taom").lower())
-for buyurtma in buyurtmalar:
-    if buyurtma in taomlar:
-        print(f"{buyurtma.title()} {taomlar[buyurtma]}")
-    else:
-        print(f"Kechirasiz, {buyurtma} bizda yuq.")
+# taomlar={'osh':20000,'shurvo':30000,'shashlik':6000,'non':5000,'salat':6000,'choy':2000,'kompot':15000,'bushteks':3000,'mastava':35000}
+# print("3ta ovqat nomini kiriting.")
+# buyurtmalar=[]
+# for n in range(3):
+#     buyurtmalar.append(input(f"{n+1}-taom").lower())
+# for buyurtma in buyurtmalar:
+#     if buyurtma in taomlar:
+#         print(f"{buyurtma.title()} {taomlar[buyurtma]}")
+#     else:
+#         print(f"Kechirasiz, {buyurtma} bizda yuq.")
+
+
+
+# 16-dars
+# car0={
+#     'model':'lacetti',
+#     'rang':'oq',
+#     'yil':2018,
+#     'narx':13000,
+#     'km':50000,
+#     'korobka':'avtomat'
+# }
+# car1={
+#     'model':'nexia 3',
+#     'rang':'qora',
+#     'yil':2015,
+#     'narx':9000,
+#     'km':89000,
+#     'korobka':'mexanika'
+# }
+# car2={
+#     'model':'gentra',
+#     'rang':'qizil',
+#     'yil':2019,
+#     'narx':15000,
+#     'km':20000,
+#     'korobka':'mexanika'
+# }
+# car =car0
+# print(f"{car['model'].title()}.\
+#     {car['rang']} rang,\
+#     {car['yil']}-yil, {car['narx']}$")
+# cars=[car0,car1,car2]
+# for car in cars:
+#     print(f"{car['model'].title()},"
+#           f"{car['rang']} rang,"
+#           f"{car['yil']}-yil, {car['narx']}$")
+# print(cars[0]['model'].title())
+
+# malibus=[]
+# for n in range(10):
+#     new_car={
+#         'model':'malibu',
+#         'rang':None,
+#         'yil':2025,
+#         'narx':None,
+#         'km':0,
+#         'korobka':'avto'
+#         }
+#     malibus.append(new_car)
+# for malibu in malibus[:3]:
+#     malibu['rang']='qizil'
+# for malibu in malibus[3:6]:
+#     malibu['rang']='qora'
+# for malibu in malibus[6:]:
+#     malibu['rang']='qora'
+#     malibu['korobka']='mexanika'
+# for malibu in malibus:
+#     if malibu['korobka']=='avto':
+#         malibu['narx']=40000
+#     else:
+#         malibu['narx']=30000
+# print(malibus)
+# dasturchilar={
+#     'ali':['python','c++'],
+#     'vali':['html','css','js'],
+#     'hasan':['php','sql'],
+#     'husan':['python','php'],
+#     'maryam':['c++','c#']
+#     }
+# for ism, tillar in dasturchilar.items():
+#     print(f"\n{ism.title()} quyidagi dasturlash tillarini biladi:")
+#     for til in tillar:
+#         print(f'{til.upper()}', end=' ')
+
+# hamkasblar={
+#     'ali':{
+#         'familiya':'valiyev',
+#         'tyil':1995,
+#         'malumot':'oliy',
+#         'tillar':['python','c++']
+#         },
+#     'vali':{
+#         'familiya':'aliyev',
+#         'tyil':2001,
+#         'malumot':'o\'rta-maxsis',
+#         'tillar':['html','css','js']
+#         },
+#     'hasan':{
+#         'familiya':'husanov',
+#         'tyil':1999,
+#         'malumot':'maxsus',
+#         'tillar':['python','php']
+#     }
+# }
+# for ism, info in hamkasblar.items():
+#     print(f"\n{ism.title()} {info['familiya'].title()}, "
+#           f"{info['tyil']}-yilda tug'ilgan. "
+#           f"Ma'lumoti: {info['malumot']}. \n"
+#           "Quyidagi dasturlash tillarini biladi:")
+#     for til in info['tillar']:
+#         print(til.upper())
+
+# Vazifalar
+# shaxslar={
+#   'Abu Abdulloh Muhammad ibn Ismoil':{
+#       'tyil':810,
+#       'tjoy':'Buxoro',
+#       'yosh':60,
+#       'asarlar':['Al-jome as-sahih', 'Al-adab al-mufrad','At-tarix al-kabir']
+#         },
+#   'Abdulla Qodiriy':{
+#       'tyil':1894,
+#       'tjoy':'Toshkent',
+#       'yosh':44,
+#       'asarlar':["o'tkan kunlar",'Mehrobdan cahyon','obid ketmon']
+#     },
+#   'Erkin Vohidov':{
+#       'tyil':1936,
+#       'tjoy':"Farg'ona",
+#       'yosh':80,
+#       'asarlar':['tong nafasi',"qo'shiqlarim sizga","o'zbegim",'qiziquvchan matmusa']
+#     },
+#   'Alisher Navoiy':{
+#       'tyil':1441,
+#       'tjoy':"Xirot",
+#       'yosh':60,
+#       'asarlar':['xamsa','lison ut-tayr','mahbub al-qulub','munojat']
+#   }
+# }
+# for shaxs, info in shaxslar.items():
+#     print(f"{shaxs.title()} {info['tyil']}-yilda "
+#           f"{info['tjoy']}da tavallud topgan."
+#           f" {info['yosh']} yil umr ko'rgan\n"
+#           f"{shaxs.title()}ning eng mashhur asarlari: ")
+#     for asar in info['asarlar']:
+#         print(asar.title())
+# print("3ta sevimli kinoyingizni kiriting")
+# akamlar={
+#     'ali':['Terminator','rambo','titanic'],
+#     'vali':['tenet','inception','interstellar'],
+#     'hasan':['abdullajon','bomba','shaytanat'],
+#     'husan':['mahallada duv-duv gap','john wick']
+# }
+# for ism, info in akamlar.items():
+#     print(f"{ism.title()}ning sevimli kinolari:")
+#     for kino in info:
+#         print(kino)
+
+davlatlar={
+    "o'zbekiston":{
+        'poytaxt':'toshkent',
+        'hudud':448978,
+        'aholi':33000000,
+        'puli':"so'm"
+      },
+    'rossiya':{
+        'poytaxt':'moskva',
+        'hudud':17098246,
+        'aholi':144000000,
+        'puli':'rubl'
+     },
+    'aqsh':{
+        'poytaxt':'vashington',
+        'hudud':9631418,
+        'aholi':327000000,
+        'puli':'dollar'
+        },
+    'malayziya':{
+        'poytaxt':'kuala-lumpur',
+        'hudud':329750,
+        'aholi':25000000,
+        'puli':'rinngit'
+    }
+}
+# for davlat, info in davlatlar.items():
+#     print(f"{davlat.title()}ning poytaxti {info['poytaxt'].title()}\n"
+#           f"Hududi: {info['hudud']} kv.km\n"
+#           f"Aholisi: {info['aholi']}\n"
+#           f"Pul birligi: {info['puli']}\n")
+#
+# a=(input('Davlat nomini kiriting'))
+# b=davlatlar.get(a)
+davlat = input('Davlat nomini kiriting: ').lower()
+if davlat in davlatlar:
+    info = davlatlar[davlat]
+    print(f"{davlat.title()}ning poytaxti {info['poytaxt'].title()}\n"
+          f"Hududi: {info['hudud']} kv.km\n"
+          f"Aholisi: {info['aholi']}\n"
+          f"Pul birligi: {info['puli']}\n")
+else:
+    print("Bizda bu davlat haqida ma'lumot yuq" )
