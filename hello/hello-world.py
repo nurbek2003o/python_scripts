@@ -753,12 +753,83 @@ davlatlar={
 #
 # a=(input('Davlat nomini kiriting'))
 # b=davlatlar.get(a)
-davlat = input('Davlat nomini kiriting: ').lower()
-if davlat in davlatlar:
-    info = davlatlar[davlat]
-    print(f"{davlat.title()}ning poytaxti {info['poytaxt'].title()}\n"
-          f"Hududi: {info['hudud']} kv.km\n"
-          f"Aholisi: {info['aholi']}\n"
-          f"Pul birligi: {info['puli']}\n")
-else:
-    print("Bizda bu davlat haqida ma'lumot yuq" )
+# davlat = input('Davlat nomini kiriting: ').lower()
+# if davlat in davlatlar:
+#     info = davlatlar[davlat]
+#     print(f"{davlat.title()}ning poytaxti {info['poytaxt'].title()}\n"
+#           f"Hududi: {info['hudud']} kv.km\n"
+#           f"Aholisi: {info['aholi']}\n"
+#           f"Pul birligi: {info['puli']}\n")
+# else:
+#     print("Bizda bu davlat haqida ma'lumot yuq" )
+
+
+
+# 17-dars
+# son=1
+# while son<=5:
+#     print(son, end=' ')
+#     son=son+1
+# print("kiritilgan sonning kvadratini qaytaruvchi dastur.")
+# savol='istalgan son kiriting'
+# savol+="(dasturni to'xtatish uchun 'exit' deb yozing): "
+# ishora=True
+# while ishora:
+#     qiymat=input(savol)
+#     if qiymat == 'exit':
+#         break
+#     else:
+#          print(float(qiymat)**2)
+
+# son=0
+# while son<10:
+#     son += 1
+    # if son%2!=0:
+    #     continue
+    # else:
+    #     print(son)
+    # son += 1
+
+
+# Vazifalar
+# savol = "Sevgan kitobingizni kiriting"
+# savol += "(barcha kitoblarni kiritib bo'lgach 'exit' deb yozing): "
+#
+# while True:
+#     kitob = input(savol)
+#     if kitob == 'exit':
+#         break
+# print('Rahmat!')
+
+# savol ='Yoshingizni kiriting: '
+# while True:
+#     qiymat=input(savol)
+#     if qiymat == 'exit' or qiymat == 'quit':
+#         break
+#     yosh=int(qiymat)
+#     if yosh<7:
+#         narx=2000
+#     elif 7<=yosh<=18:
+#         narx=3000
+#     elif 18<=yosh<=65:
+#         narx=10000
+#     else: narx=0
+#     if narx==0:
+#         print("Sizga tekin")
+#     else:
+#         print(f"Sizga chipta narxi: {narx} so'm")
+#
+
+savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+savol += "Musbat son kiriting "
+savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+
+while True:
+    qiymat = input(savol)
+    if qiymat=='exit':
+        break
+    elif float(qiymat)<0:
+        continue
+    else:
+        ildiz = float(qiymat)**(0.5)
+        print(f"{qiymat} ning ildizi {ildiz} ga teng")
