@@ -908,17 +908,89 @@ davlatlar={
 #       javob=input("yana mahsulot kiritishni xohlaysizmi? (ha/yoq)")
 #       if javob =='yoq':
 #           break
-buyurtmalar=['olma', 'anjir','uzum', 'qovun']
-mahsulotlar={
-    'olma':20000,
-    'shaftoli':25000,
-    'tarvuz':40000,
-    'uzum':22000
-}
-while buyurtmalar:
-    buyurtma=buyurtmalar.pop()
-    if buyurtma in mahsulotlar.keys():
-        narx=mahsulotlar[buyurtma]
-        print(f"{buyurtma.title()}-{narx} so'm")
-    else:
-        print(f"Bizda {buyurtma} yo'q")
+# buyurtmalar=['olma', 'anjir','uzum', 'qovun']
+# mahsulotlar={
+#     'olma':20000,
+#     'shaftoli':25000,
+#     'tarvuz':40000,
+#     'uzum':22000
+# }
+# while buyurtmalar:
+#     buyurtma=buyurtmalar.pop()
+#     if buyurtma in mahsulotlar.keys():
+#         narx=mahsulotlar[buyurtma]
+#         print(f"{buyurtma.title()}-{narx} so'm")
+#     else:
+#         print(f"Bizda {buyurtma} yo'q")
+
+
+
+
+
+# 19-dars
+# def salom_ber(ism):
+#     """Salom beruvchi funksiya """
+#     print(f"Assalomu alaykum!, hurmatli {ism.title()}")
+# salom_ber('hasan')
+# salom_ber('boja')
+# print(salom_ber.__doc__)
+# def toliq_sim(ism, familiya):
+#     """Foydalanuvchi ism va familyasini ko'rsatadi"""
+#     print(f"Foydalanuvchi ismi: {ism.title()}\n"
+#           f"Foydalanuvchi familyasi: {familiya.title()}")
+# toliq_sim('hasan', 'olimov')
+
+# def yosh_hisobla(tugilgan_yil,joriy_yil=2025):
+#     """Foydalanuvchi yoshini hisoblaydigan dastur"""
+#     print(f" {joriy_yil-tugilgan_yil} yoshda")
+# yosh_hisobla('olim', 2003)
+# yosh_hisobla(tugilgan_yil=2003)
+# def yosh_hisobla(tugilgan_yil, joriy_yil=2025):
+#     """Foydalanuvchi tug'ilgan yilidan uning yoshini hisoblaydi"""
+#     print(f"Siz {joriy_yil - tugilgan_yil} yoshdasiz")
+#
+#
+# tugilgan_yil = int(input("Tug'ilgan yilingizni kiriting: "))
+# yosh_hisobla(tugilgan_yil)
+
+# uyga vazifalar
+# def tugilgan_yil(ism,yosh,joriy_yil=2025):
+#     """Foydalanuvchi tug'olgan yilini hisoblaydi"""
+#     print(f"{ism.title()} {joriy_yil-yosh}-yilda tug'ilgan.")
+# tugilgan_yil(ism='olim',yosh=22)
+
+# def son_kvadrati(son):
+#     son=int(input("Ixtiyoriy biror butun son kiriting: "))
+#     print(f"{son}ning kvadrati {son**2}ga, kubi {son**3}ga teng.")
+# son_kvadrati(son=-1)
+
+# def sonning_juft_tekshirish(son):
+#     son=int(input("Istalgan son kiriting: "))
+#     if son%2:
+#         print("Toq son")
+#     else:
+#         print("Juft son")
+# sonning_juft_tekshirish(son=1)
+
+
+# def son_ol(son1, son2):
+#     """Foydalanuvchi sonlari ustida amallar"""
+#     print("2ta son kiriting!")
+#     son1=int(input("1-sonni kiriting: "))
+#     son2=int(input("2-sonni kiriting: "))
+#     if son1 > son2:
+#         print(f"{son1} katta {son2}dan ")
+#     elif son1==son2:
+#         print("Sonlar teng")
+# son_ol(1,2)
+
+# def son_daraja(x,y=2):
+#     print(f"{x} ning {y}-darajasi {x**y}ga teng")
+# son_daraja(9)
+
+def son_bolinish(son):
+    son=int(input("Ixtiyoriy sonni kiriting: "))
+    for n in range(2,10):
+        if son%n==0:
+            print(f"{son} {n} ga qoldiqsiz bo'linadi")
+son_bolinish(5)
