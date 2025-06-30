@@ -11,7 +11,7 @@
 # print(manzil.lstrip())
 # print(manzil.rstrip())
 # print(manzil.strip())
-
+from cloudinit.config.cc_ntp import install_ntp_client
 
 #  Sonlar darsi vazifasi
 
@@ -820,16 +820,105 @@ davlatlar={
 #         print(f"Sizga chipta narxi: {narx} so'm")
 #
 
-savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
-savol += "Musbat son kiriting "
-savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+# savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+# savol += "Musbat son kiriting "
+# savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+#
+# while True:
+#     qiymat = input(savol)
+#     if qiymat=='exit':
+#         break
+#     elif float(qiymat)<0:
+#         continue
+#     else:
+#         ildiz = float(qiymat)**(0.5)
+#         print(f"{qiymat} ning ildizi {ildiz} ga teng")
 
-while True:
-    qiymat = input(savol)
-    if qiymat=='exit':
-        break
-    elif float(qiymat)<0:
-        continue
+
+
+# 18-dars
+# ismlar=[]
+# print("Yaqin do'stlaringiz ro'yxatini tuzamiz.")
+# n=1
+# while True:
+#     savol=f"{n}-do'stingiz ismini kiriting:"
+#     ism=input(savol)
+#     ismlar.append(ism)
+#     javob=input("Yana ism qo'shasiz? (ha/yoq)")
+#     if javob=='ha':
+#         n+=1
+#         continue
+#     else:
+#         break
+# print("Do'stlaringiz ro'yxati:")
+# for ism in ismlar:
+#     print(ism.title())
+
+# print("Do'stlaringiz yoshini saqlaymiz.")
+# dostlar={}
+# ishora=True
+# while ishora:
+#     ism=input("Do'stingiz ismini kiriting: ")
+#     yosh=input(f"{ism.title()}ning yoshini kiriting: ")
+#     dostlar[ism]=int(yosh)
+#
+#     javob=input("Yana ma'lumot qo'shasizmi? (ha/yoq)")
+#     if javob=="yoq":
+#         ishora=False
+# for ism, yosh in dostlar.items():
+#     print(f"{ism.title()} yoshi {yosh}-yoshda")
+
+# cars=['lacetti','nexia','toyota','nexia','malibu','nexia']
+# while 'nexia' in cars:
+#     cars.remove('nexia')
+# print(cars)
+
+# talabalar=['hasan','husan','olim','botir']
+# baholangan_talabalar={}
+# while talabalar:
+#     talaba=talabalar.pop()
+#     baho=input(f"{talaba.title()}ning bahosini kiriting: ")
+#     print(f"{talaba.title()}ning baholandi")
+#     baholangan_talabalar[talaba]=(baho)
+# print(baholangan_talabalar)
+
+
+# Uyga vazifalar
+# buyurtmalar=[]
+# n=1
+# while True:
+#     buyurtma=input(f"{n}-buyurtmangizni kiriting: ")
+#     buyurtmalar.append(buyurtma)
+#     javob=input("Yana buyurtma berasizmi? (ha/yoq)")
+#     if javob=='ha':
+#         n+=1
+#         continue
+#     else:
+#         break
+# print("Buyurtmalaringiz:")
+# for buyurtma in buyurtmalar:
+#     print(buyurtma.lower())
+
+
+# mahsulotlar={}
+# while True:
+#       mahsulot=input("Mahsulot nomini kiriting: ")
+#       narx=input(f"{mahsulot.title()}ning narxini kiriting: ")
+#       mahsulotlar[mahsulot]=narx
+#       javob=input("yana mahsulot kiritishni xohlaysizmi? (ha/yoq)")
+#       if javob =='yoq':
+#           break
+buyurtmalar=['olma', 'anjir','uzum', 'qovun']
+mahsulotlar={
+    'olma':20000,
+    'shaftoli':25000,
+    'tarvuz':40000,
+    'uzum':22000
+}
+while buyurtmalar:
+    buyurtma=buyurtmalar.pop()
+    if buyurtma in mahsulotlar.keys():
+        narx=mahsulotlar[buyurtma]
+        print(f"{buyurtma.title()}-{narx} so'm")
     else:
-        ildiz = float(qiymat)**(0.5)
-        print(f"{qiymat} ning ildizi {ildiz} ga teng")
+        print(f"Bizda {buyurtma} yo'q")
