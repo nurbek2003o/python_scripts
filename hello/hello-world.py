@@ -12,6 +12,8 @@
 # print(manzil.rstrip())
 # print(manzil.strip())
 from cloudinit.config.cc_ntp import install_ntp_client
+from speechd_config import dont_ask
+
 
 #  Sonlar darsi vazifasi
 
@@ -1139,17 +1141,17 @@ from cloudinit.config.cc_ntp import install_ntp_client
 
 
 # 21-dars
-def bahola(ismlar):
-     baholar={}
-     #ismlar=ismlar[:]
-     for ism in ismlar:
-        baho=input(f"Talaba {ism.title()}ning bahosini kiriting: ")
-        baholar[ism]=baho
-     return baholar
-talabalar=['ali', 'vali', 'husan', 'hasan']
-baholar=bahola(talabalar[:])
-print(baholar)
-print(talabalar)
+# def bahola(ismlar):
+#      baholar={}
+#      ismlar=ismlar[:]
+     # for ism in ismlar:
+     #    baho=input(f"Talaba {ism.title()}ning bahosini kiriting: ")
+     #    baholar[ism]=baho
+     # return baholar
+# talabalar=['ali', 'vali', 'husan', 'hasan']
+# baholar=bahola(talabalar[:])
+# print(baholar)
+# print(talabalar)
 
 
 # Uyga vazifalar
@@ -1162,3 +1164,37 @@ print(talabalar)
 # yangi_ismlar=kata_harf(ismlar)
 # print(ismlar)
 # print(yangi_ismlar)
+
+
+# 22-dars
+# def summa(*sonlar):
+#     yigindi=0
+#     for son in sonlar:
+#         yigindi+=son
+#     return yigindi
+# print(summa(1,3,5))
+#
+# def avto_info(kompaniya,model, **malumotlar):
+#     malumotlar['kompaniya']=kompaniya
+#     malumotlar['model']=model
+#     return malumotlar
+# avto1=avto_info('gm','lasetti', rang='qora', yil=2018)
+# avto2=avto_info('toyota', 'cemri', rang='oq', yil=2020, narx=13000)
+# print(avto2)
+
+# Uyga vazifalar
+# def mutiplay(*sonlar):
+#     kopaytma=1
+#     for son in sonlar:
+#         kopaytma*=son
+#     return kopaytma
+# print(mutiplay(1,2,3,4))
+
+def talaba_ismlar(ism,familiya,**malumotlar):
+    malumotlar['ism']=ism
+    malumotlar['familiya']=familiya
+    return malumotlar
+talaba1=talaba_ismlar('nurbek', 'eshkuvvatov', otasining_ismi="Zafar o'g'li",yosh='22')
+print(f"Talaba {talaba1['ism'].title()} {talaba1['familiya'].title()} {talaba1['otasining_ismi'].title()} \n"
+      f"Yoshi: {talaba1['yosh']}")
+print(talaba1)
