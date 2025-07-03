@@ -42,7 +42,6 @@ from cloudinit.config.cc_ntp import install_ntp_client
 # print(a + ' ' + '/' + ' ' + b + ' =' + ' ' + f)
 
 
-
 # List elementlari
 # mevalar = ['olma', 'anjir', 'shaftoli', 'o\'rik']
 # print("Birinchi meve: ", mevalar[0].title())
@@ -119,7 +118,7 @@ from cloudinit.config.cc_ntp import install_ntp_client
 
 #  Vazifalar
 
-#davlatlar = ['Uzb', 'AQSH', 'Rus', 'German', 'France']
+# davlatlar = ['Uzb', 'AQSH', 'Rus', 'German', 'France']
 # davlatlar.sort(reverse=True)
 # print(davlatlar)
 # juft_sonlar = list(range(120,1201,2))
@@ -249,7 +248,7 @@ from cloudinit.config.cc_ntp import install_ntp_client
 # elif yosh <=12:
 #     print('Sizga kirish 5000 so\'m')
 # else:
-    # print('Sizga kirish 10000 so\'m')
+# print('Sizga kirish 10000 so\'m')
 
 
 # yosh = int(input('Yoshingiz nechida'))
@@ -339,8 +338,6 @@ from cloudinit.config.cc_ntp import install_ntp_client
 #     print(f"Savatchangiz bo'sh")
 
 
-
-
 # uyga vazifalar
 # son = float(input('Juft son kiriting:'))
 # if son%2:
@@ -412,7 +409,7 @@ from cloudinit.config.cc_ntp import install_ntp_client
 #     if not (b%son):
 #         print(f"{b} soni {son} ga qoldiqsiz bo'linadi")
 
-   # 13-dars | Pythonda lug'at
+# 13-dars | Pythonda lug'at
 # car_0= {'model':'ferrari', 'rang':'qizil'}
 # print(car_0['rang'])
 # talaba_0={'ism':'murod olimov', 'yosh':20, 't_yil':2000}
@@ -439,7 +436,6 @@ from cloudinit.config.cc_ntp import install_ntp_client
 # print(telefonlar)
 # phone=telefonlar.get('hasan')
 # print(phone)
-
 
 
 # Uyga vazifalar
@@ -570,7 +566,6 @@ from cloudinit.config.cc_ntp import install_ntp_client
 #         print(f"{buyurtma.title()} {taomlar[buyurtma]}")
 #     else:
 #         print(f"Kechirasiz, {buyurtma} bizda yuq.")
-
 
 
 # 16-dars
@@ -719,32 +714,34 @@ from cloudinit.config.cc_ntp import install_ntp_client
 #     for kino in info:
 #         print(kino)
 
-davlatlar={
-    "o'zbekiston":{
-        'poytaxt':'toshkent',
-        'hudud':448978,
-        'aholi':33000000,
-        'puli':"so'm"
-      },
-    'rossiya':{
-        'poytaxt':'moskva',
-        'hudud':17098246,
-        'aholi':144000000,
-        'puli':'rubl'
-     },
-    'aqsh':{
-        'poytaxt':'vashington',
-        'hudud':9631418,
-        'aholi':327000000,
-        'puli':'dollar'
-        },
-    'malayziya':{
-        'poytaxt':'kuala-lumpur',
-        'hudud':329750,
-        'aholi':25000000,
-        'puli':'rinngit'
-    }
-}
+# davlatlar = {
+#     "o'zbekiston": {
+#         'poytaxt': 'toshkent',
+#         'hudud': 448978,
+#         'aholi': 33000000,
+#         'puli': "so'm"
+#     },
+#     'rossiya': {
+#         'poytaxt': 'moskva',
+#         'hudud': 17098246,
+#         'aholi': 144000000,
+#         'puli': 'rubl'
+#     },
+#     'aqsh': {
+#         'poytaxt': 'vashington',
+#         'hudud': 9631418,
+#         'aholi': 327000000,
+#         'puli': 'dollar'
+#     },
+#     'malayziya': {
+#         'poytaxt': 'kuala-lumpur',
+#         'hudud': 329750,
+#         'aholi': 25000000,
+#         'puli': 'rinngit'
+#     }
+# }
+
+
 # for davlat, info in davlatlar.items():
 #     print(f"{davlat.title()}ning poytaxti {info['poytaxt'].title()}\n"
 #           f"Hududi: {info['hudud']} kv.km\n"
@@ -762,7 +759,6 @@ davlatlar={
 #           f"Pul birligi: {info['puli']}\n")
 # else:
 #     print("Bizda bu davlat haqida ma'lumot yuq" )
-
 
 
 # 17-dars
@@ -784,11 +780,11 @@ davlatlar={
 # son=0
 # while son<10:
 #     son += 1
-    # if son%2!=0:
-    #     continue
-    # else:
-    #     print(son)
-    # son += 1
+# if son%2!=0:
+#     continue
+# else:
+#     print(son)
+# son += 1
 
 
 # Vazifalar
@@ -833,7 +829,6 @@ davlatlar={
 #     else:
 #         ildiz = float(qiymat)**(0.5)
 #         print(f"{qiymat} ning ildizi {ildiz} ga teng")
-
 
 
 # 18-dars
@@ -924,9 +919,6 @@ davlatlar={
 #         print(f"Bizda {buyurtma} yo'q")
 
 
-
-
-
 # 19-dars
 # def salom_ber(ism):
 #     """Salom beruvchi funksiya """
@@ -996,7 +988,7 @@ davlatlar={
 # son_bolinish(5)
 
 
-#20-dars
+# 20-dars
 
 # def toliq_ism_yasa(ism, familiya, otasining_ismi=''):
 #     """To'liq ism qaytaruvcji funksiya"""
@@ -1042,7 +1034,7 @@ davlatlar={
 #             min+=1
 #     return sonlar
 # print(oraliq(0,100,10))
-#def avto_info(kompaniya,model,rangi,korobka,yili,narhi):
+# def avto_info(kompaniya,model,rangi,korobka,yili,narhi):
 # print("Saytimizdagi avtolar ro'yxatini shakllantiramiz.")
 # avtolar = []  # salondagi avtolar uchun bo'sh ro'yxat
 # while True:
@@ -1056,12 +1048,12 @@ davlatlar={
 #
 #     Foydalanuvchi kiritdan ma'lumotlardan avto_info yordamida
 #     lug'at shakllantirib, har bir lug'atni ro'yxatga qo'shamiz:
-    # avtolar.append(avto_info(kompaniya, model, rangi, korobka, yili, narhi))
-    #
-    # Yana avto qo'shish-qo'shmaslikni so'raymiz
-    # javob = input("Yana avto qo'shasizmi? (yes/no): ")
-    # if javob == 'no':
-    #     break
+# avtolar.append(avto_info(kompaniya, model, rangi, korobka, yili, narhi))
+#
+# Yana avto qo'shish-qo'shmaslikni so'raymiz
+# javob = input("Yana avto qo'shasizmi? (yes/no): ")
+# if javob == 'no':
+#     break
 #
 # print(avtolar)
 
@@ -1117,23 +1109,23 @@ davlatlar={
 #     return aylana
 
 
-# def tub_sonlar_top(min,max):
-#     tub_sonlar=[]
-#     for n in range(min,max+1):
-#         tub=True
-#         if n==1:
-#             tub=False
-#         elif n==2:
-#             tub=True
+# def tub_sonlar_top(min, max):
+#     tub_sonlar = []
+#     for n in range(min, max + 1):
+#         tub = True
+#         if n == 1:
+#             tub = False
+#         elif n == 2:
+#             tub = True
 #         else:
-#             for x in range(2,n):
-#                 if n %x==0:
-#                     tub=False
+#             for x in range(2, n):
+#                 if n % x == 0:
+#                     tub = False
 #         if tub:
 #             tub_sonlar.append(n)
-#         return tub_sonlar
+#     return tub_sonlar
 # tub_sonlar_top(2,15)
-
+#
 # def son(n):
 #     sonlar=[]
 #     for x in range(n):
@@ -1141,5 +1133,32 @@ davlatlar={
 #             sonlar.append(1)
 #         else:
 #             sonlar.append(sonlar[x-1]+sonlar[x-2])
-#         return sonlar
+#     return sonlar
 # print(son(20))
+
+
+
+# 21-dars
+def bahola(ismlar):
+     baholar={}
+     #ismlar=ismlar[:]
+     for ism in ismlar:
+        baho=input(f"Talaba {ism.title()}ning bahosini kiriting: ")
+        baholar[ism]=baho
+     return baholar
+talabalar=['ali', 'vali', 'husan', 'hasan']
+baholar=bahola(talabalar[:])
+print(baholar)
+print(talabalar)
+
+
+# Uyga vazifalar
+# def kata_harf(matnlar):
+#     matnlar=matnlar[:]
+#     for i in range(len(matnlar)):
+#         matnlar[i]=matnlar[i].title()
+#     return matnlar
+# ismlar=['ali','vali','hasan','husan']
+# yangi_ismlar=kata_harf(ismlar)
+# print(ismlar)
+# print(yangi_ismlar)
